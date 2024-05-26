@@ -1764,7 +1764,7 @@
 										<p role="status" aria-live="polite" aria-atomic="true"></p>
 										<ul></ul>
 									</div>
-									<form action="https://qts.su/#wpcf7-f19-p2-o2" method="post" class="wpcf7-form init"
+									<form id="form_con" method="post" class="wpcf7-form init"
 										aria-label="Контактная форма" novalidate="novalidate" data-status="init">
 										<div style="display: none;">
 											<input type="hidden" name="_wpcf7" value="19">
@@ -1781,26 +1781,30 @@
 										</div>
 
 										<div class="label">
-											<p><span class="wpcf7-form-control-wrap " data-name="text-536"><input
+											<p>
+												<span class="wpcf7-form-control-wrap " data-name="text-536"><input
 														size="40"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required mb-2"
 														aria-required="true" aria-invalid="false" placeholder="Откуда"
-														value="" type="text" name="text-536"></span><span
+														value="" type="text" name="from">
+													
+													</span>
+													<span
 													class="wpcf7-form-control-wrap" data-name="text-542"><input
 														size="40"
 														class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
 														aria-required="true" aria-invalid="false" placeholder="Куда"
-														value="" type="text" name="text-542"></span>
+														value="" type="text" name="to"></span>
 											</p>
 										</div>
 										<div class="label">
-											<p><span class="wpcf7-form-control-wrap" data-name="email-349"><input
+											<p><span class="wpcf7-form-control-wrap" data-name="email"><input
 														size="40"
 														class="wpcf7-form-control mb-2 wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
 														aria-required="true" aria-invalid="false" placeholder="Email"
-														value="" type="email" name="email-349"></span><span
+														value="" type="email" name="email"></span><span
 													class="wpcf7-form-control-wrap mask-552"><input type="tel" value=""
-														name="mask-552"
+														name="phone"
 														class="wpcf7-form-control wpcf7-mask wpcf7-validates-as-required wpcf7mf-mask"
 														size="40" aria-required="1" aria-invalid=""
 														placeholder="+7 (___) ___-__-__"
@@ -1941,8 +1945,10 @@
 															Москве и Московской области</div>
 														<p class="null">Оставь заявку и мы рассчитаем стоимость
 															перевозки вашего груза</p>
-														<div class="popmake-129 but pum-trigger"
-															style="cursor: pointer;">Рассчитать</div>
+														<button data-type="2" class="btn-send popmake-129 but pum-trigger"
+															style="cursor: pointer;">
+															Рассчитать
+														</button>
 
 													</div>
 												</div>
@@ -1962,8 +1968,8 @@
 															негабаритных грузов</div>
 														<p class="null">Оставь заявку и мы рассчитаем стоимость
 															перевозки вашего груза</p>
-														<div class="popmake-129 but pum-trigger"
-															style="cursor: pointer;">Рассчитать</div>
+														<button data-type="3" class="btn-send btn-send popmake-129 but pum-trigger"
+															style="cursor: pointer;">Рассчитать</button>
 
 													</div>
 												</div>
@@ -1983,8 +1989,8 @@
 															в Казахстан</div>
 														<p class="null">Оставь заявку и мы рассчитаем стоимость
 															перевозки вашего груза</p>
-														<div class="popmake-129 but pum-trigger"
-															style="cursor: pointer;">Рассчитать</div>
+														<button  data-type="4" class="btn-send popmake-129 but pum-trigger"
+															style="cursor: pointer;">Рассчитать</button>
 
 													</div>
 												</div>
@@ -2388,9 +2394,9 @@
 												<div
 													class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeIn fadeIn step_1 wpb_start_animation animated">
 													<div class="wpb_wrapper">
-														<p><span class="number">1</span>Вы оставляете <a
-																class="popmake-129 pum-trigger" href="https://qts.su/#"
-																style="cursor: pointer;">заявку на сайте</a></p>
+														<p><span class="number">1</span>Вы оставляете <button data-type="0"
+																class="popmake-129 pum-trigger btn-send btn-aaaa"
+																style="cursor: pointer;">заявку на сайте</button></p>
 
 													</div>
 												</div>
@@ -2570,7 +2576,7 @@
 						<p role="status" aria-live="polite" aria-atomic="true"></p>
 						<ul></ul>
 					</div>
-					<form action="https://qts.su/#wpcf7-f128-o1" method="post" class="wpcf7-form init"
+					<form id="form_modal" method="post" class="wpcf7-form init"
 						aria-label="Контактная форма" novalidate="novalidate" data-status="init">
 						<div style="display: none;">
 							<input type="hidden" name="_wpcf7" value="128">
@@ -2589,14 +2595,14 @@
 
 						<p><span class="wpcf7-form-control-wrap" data-name="text-626"><input size="40"
 									class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Ваше имя"
-									value="" type="text" name="text-626"></span><span
-								class="wpcf7-form-control-wrap mask-258"><input type="tel" value="" name="mask-258"
+									value="" type="text" name="name"></span><span
+								class="wpcf7-form-control-wrap mask-258"><input type="tel" value="" name="phone"
 									class="wpcf7-form-control wpcf7-mask wpcf7-validates-as-required wpcf7mf-mask"
 									size="40" aria-required="1" aria-invalid="" placeholder="+7 (___) ___-__-__"
 									data-mask="+7 (___) ___-__-__"></span><span class="wpcf7-form-control-wrap"
 								data-name="textarea-735"><textarea cols="40" rows="10"
 									class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
-									placeholder="Комментарии" name="textarea-735"></textarea></span><br>
+									placeholder="Комментарии" name="desc"></textarea></span><br>
 							<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
 								value="Рассчитать"><span class="wpcf7-spinner"></span>
 						</p>
