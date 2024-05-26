@@ -8,13 +8,27 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model application {
+model FeedbackModel {
   id       Int      @id @default(autoincrement())
-  type     Int
   name     String       
   email    String   
   phone    String      
+  status   String @default("Создан")
+  createdAt DateTime @default(now())
+}
 
+model Token {
+  id          Int       @id @default(autoincrement())
+  token       String    
+  expiration  DateTime  
+}
+
+model application {
+  id          Int       @id @default(autoincrement())
+  type    Int
+  name     String       
+  email    String   
+  phone    String      
   status   String @default("Создан")
   createdAt DateTime @default(now())
 }
