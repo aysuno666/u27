@@ -79,3 +79,25 @@ body{
   text-decoration: underline;
 }
 
+.toaster {
+  color: #FFFF;
+  position: fixed;
+  top: 3%;
+  width: auto;
+  display: flex;
+  font-size: 18px;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7px 15px;
+  border-radius: 16px;
+  background-color: rgba(41, 155, 19, 0.9);
+  z-index: 11231313;
+  transition: all .1s;
+  right: 3%;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -29,6 +29,12 @@ window.addEventListener("load", () => {
   });
 });
 
+function notifications(){
+  toaster.classList.remove('hidden')
+  setTimeout(()=> {
+    toaster.classList.add('hidden')
+  }, 1200)
+}
 
 form_con.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -40,6 +46,7 @@ form_con.addEventListener("submit", (e) => {
   sendformData(data);
   e.target.reset();
 });
+
 form_modal.addEventListener("submit", (e) => {
   e.preventDefault();
     
@@ -64,6 +71,7 @@ function sendformData(data) {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
+      notifications()
       return response.json();
     })
     .then((data) => {
@@ -72,10 +80,4 @@ function sendformData(data) {
     .catch((error) => {
       console.error("Error:", error);
     });
-}
-
-function zayavka(e) {
-   e.target.reset();
-  setTimeout(hideToaster, 1100);
-  setTimeout(() => sendFeedback(feedback), 1100);
 }
